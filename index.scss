@@ -1,6 +1,7 @@
 $pink: #F9BDBD;
 @import url('https://fonts.googleapis.com/css2?family=Adamina&family=Montserrat:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap');
 $grey: #3E3F43;
+$grey-title: #313235;
 $dark-grey: rgba(34, 34, 34, 0.75);
 $orange: #DAA520;
 
@@ -18,24 +19,27 @@ ul {
     list-style: none;
 }
 .header {
+  position: relative;
   &__decor {
     position: absolute;
-    width: 800px;
+    width: 370px;
     height: 800px;
-    left: 782px;
     top: 0;
+    right: 0;
     background-color: $pink;
     border-bottom-left-radius: 20%;
+    border: 1px solid black;
+
     z-index: -1;
   }
   &__image {
-    margin-right: 0;
-    border: 1px solid red;
+    margin: 0;
+    right: 0;
+
   }
 }
 .container {
-  margin: 0;
-  margin-left: 80px;
+  margin: 0 0 85px 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,6 +51,9 @@ ul {
   justify-content: space-between;
   align-items: center;
   width: 192px;
+  &__img {
+    margin-right: 8px;
+  }
   &__text {
     font-size: 24px;
     line-height: 33px;
@@ -55,28 +62,69 @@ ul {
     color: $grey;
   }
 }
-.header__nav {
 
+.nav {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 48px;
+    padding-left: 0;
+    max-width: 435px;
+    &_item {
+      margin: 0;
+      list-style: none;
+    }
+    &_link {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      color: $dark-grey;
+    }
+    &_link:hover {
+      font-weight: 800;
+      color:$orange;
+
+    }
+
+  }
+}
+.header__row {
   display: flex;
   justify-content: space-between;
-  column-gap: 48px;
-  padding-left: 0;
-  max-width: 435px;
-  &____item {
-
+  column-gap: 0;
+  padding-left: 52px;
+}
+.header__content {
+  margin: 0;
+  margin-top: 52px;
+  &_subtitle {
     margin: 0;
-    list-style: none;
-  }
-  &__link {
-    text-decoration: none;
-    font-size: 16px;
+    margin-bottom: 16px;
+    font-size: 36px;
+    line-height: 49px;
     font-weight: 400;
-    line-height: 22px;
-    color: $dark-grey;
+    color: $grey;
+    &_bold {
+      font-weight: 700;
+    }
   }
-  &__link:hover {
-    font-weight: 800;
-    color:$orange;
-
+  &_title {
+    margin: 0 0 16px 0;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 98px;
+    color: $grey-title;
+  }
+  &_button {
+    width: 175px;
+    height: 50px;
+    background-color: #DAA520;
+    color: white;
+    border-radius: 4px;
+    border: 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
   }
 }
