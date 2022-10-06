@@ -1,5 +1,6 @@
 $pink: #F9BDBD;
 @import url('https://fonts.googleapis.com/css2?family=Adamina&family=Montserrat:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap');
+$light-grey: #2222221A;
 $grey: #3E3F43;
 $grey-title: #313235;
 $dark-grey: rgba(34, 34, 34, 0.75);
@@ -27,7 +28,7 @@ ul {
     top: 0;
     right: 0;
     background-color: $pink;
-    border-bottom-left-radius: 20%;
+    border-bottom-left-radius: 110px;
     border: 1px solid black;
 
     z-index: -1;
@@ -89,12 +90,17 @@ ul {
 
   }
 }
-.header__row {
+.wrapper {
   display: flex;
   justify-content: space-between;
   column-gap: 0;
   padding-left: 52px;
+  &_about-section {
+    margin-top: 120px;
+    border: 1px solid red;
+  }
 }
+
 .header__content {
   margin: 0;
   margin-top: 52px;
@@ -128,3 +134,42 @@ ul {
     line-height: 22px;
   }
 }
+
+.title {
+  margin: 0;
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 98px;
+  color: $light-grey;
+}
+.subtitle {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 49px;
+  color: #3E3F43;
+}
+.description {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 49px;
+  color: #3E3F43;
+  &_bold {
+    font-weight: 800;
+  }
+}
+.sub-description {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33px;
+  color: #000;
+}
+
+.about {
+  &__description {
+    border: 1px solid red;
+  }
+}
+
