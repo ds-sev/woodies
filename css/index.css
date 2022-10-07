@@ -14,6 +14,7 @@ ul {
 
 .header {
   position: relative;
+  min-height: 920px;
 }
 .header__decor {
   position: absolute;
@@ -85,11 +86,7 @@ ul {
   justify-content: space-between;
   -moz-column-gap: 0;
        column-gap: 0;
-  padding-left: 52px;
-}
-.wrapper_about-section {
-  margin-top: 120px;
-  border: 1px solid red;
+  padding-left: 102px;
 }
 
 .header__content {
@@ -114,7 +111,8 @@ ul {
   line-height: 98px;
   color: #313235;
 }
-.header__content_button {
+
+.button {
   width: 175px;
   height: 50px;
   background-color: #DAA520;
@@ -124,6 +122,11 @@ ul {
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
+}
+.button_hit {
+  margin: 0 auto;
+  display: block;
+  width: 212px;
 }
 
 .title {
@@ -144,6 +147,7 @@ ul {
 
 .description {
   margin: 0;
+  margin-bottom: 16px;
   font-size: 36px;
   font-weight: 600;
   line-height: 49px;
@@ -160,7 +164,76 @@ ul {
   line-height: 33px;
   color: #000;
 }
+.sub-description_position_hit {
+  font-weight: 700;
+}
 
-.about__description {
-  border: 1px solid red;
+.about__figure {
+  margin: 0;
+  width: 278px;
+  height: 388px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  background-color: #F7DEA6;
+  z-index: -1;
+}
+.about__image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.about__image-2 {
+  margin-left: 112px;
+}
+
+.about__container {
+  margin: 0 100px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__container_2 {
+  margin-right: 0;
+  margin-bottom: 120px;
+}
+
+.container_fig-image {
+  position: relative;
+  margin: 0;
+  margin-right: 78px;
+  min-width: 426px;
+}
+
+.how-it-works {
+  margin-bottom: 120px;
+}
+
+.cards-container {
+  margin: 64px 100px 64px;
+  display: flex;
+  -moz-column-gap: 3px;
+       column-gap: 3px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  width: 238px;
+  height: 177px;
+}
+.card__number {
+  position: absolute;
+  margin: 0;
+  top: 18.5px;
+  left: 17px;
+  font-size: 96px;
+  font-weight: 600;
+  line-height: 131px;
+  color: rgba(249, 189, 189, 0.2509803922);
+}
+.card__icon {
+  margin-bottom: 24px;
 }/*# sourceMappingURL=index.css.map */

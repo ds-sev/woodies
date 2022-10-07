@@ -5,6 +5,8 @@ $grey: #3E3F43;
 $grey-title: #313235;
 $dark-grey: rgba(34, 34, 34, 0.75);
 $orange: #DAA520;
+$yellow: #F7DEA6;
+$pink-transparent: #F9BDBD40;
 
 
 .page {
@@ -21,6 +23,7 @@ ul {
 }
 .header {
   position: relative;
+  min-height: 920px;
   &__decor {
     position: absolute;
     width: 370px;
@@ -94,11 +97,7 @@ ul {
   display: flex;
   justify-content: space-between;
   column-gap: 0;
-  padding-left: 52px;
-  &_about-section {
-    margin-top: 120px;
-    border: 1px solid red;
-  }
+  padding-left: 102px;
 }
 
 .header__content {
@@ -122,20 +121,29 @@ ul {
     line-height: 98px;
     color: $grey-title;
   }
-  &_button {
-    width: 175px;
-    height: 50px;
-    background-color: #DAA520;
-    color: white;
-    border-radius: 4px;
-    border: 0;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 22px;
+
+}
+
+.button {
+  width: 175px;
+  height: 50px;
+  background-color: #DAA520;
+  color: white;
+  border-radius: 4px;
+  border: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  &_hit {
+    margin: 0 auto;
+    display: block;
+    width: 212px;
+
   }
 }
 
 .title {
+
   margin: 0;
   font-size: 72px;
   font-weight: 800;
@@ -151,6 +159,7 @@ ul {
 }
 .description {
   margin: 0;
+  margin-bottom: 16px;
   font-size: 36px;
   font-weight: 600;
   line-height: 49px;
@@ -165,11 +174,79 @@ ul {
   font-weight: 600;
   line-height: 33px;
   color: #000;
+  &_position_hit {
+    font-weight: 700;
+  }
 }
 
 .about {
-  &__description {
-    border: 1px solid red;
+  &__figure {
+    margin: 0;
+    width: 278px;
+    height: 388px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-color: $yellow;
+    z-index: -1;
+  }
+  &__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  &__image-2 {
+    margin-left: 112px;
+  }
+
+}
+
+.about__container {
+  margin: 0 100px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &_2 {
+    margin-right: 0;
+    margin-bottom: 120px;
+  }
+}
+.container_fig-image {
+  position: relative;
+  margin: 0;
+  margin-right: 78px;
+  min-width: 426px;
+}
+
+.how-it-works {
+  margin-bottom: 120px;
+}
+.cards-container {
+  margin: 64px 100px 64px;
+  display: flex;
+  column-gap: 3px;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:flex-end;
+  width: 238px;
+  height: 177px;
+  &__number {
+    position: absolute;
+    margin: 0;
+    top: 18.5px;
+    left: 17px;
+    font-size: 96px;
+    font-weight: 600;
+    line-height: 131px;
+    color: $pink-transparent;
+
+  }
+  &__icon {
+    margin-bottom: 24px;
+
   }
 }
 
