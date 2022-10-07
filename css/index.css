@@ -236,4 +236,66 @@ ul {
 }
 .card__icon {
   margin-bottom: 24px;
+}
+
+.cards2-container {
+  display: flex;
+  justify-content: flex-start;
+  -moz-column-gap: 56px;
+       column-gap: 56px;
+  row-gap: 40px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 952px;
+}
+
+.card2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 280px;
+  height: 400px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+.card2_theme_pink {
+  background-color: #F9BDBD;
+}
+.card2_theme_yellow {
+  background-color: #F7DEA6;
+}
+.card2_theme_blue {
+  background-color: #A8DCEC;
+}
+.card2_description {
+  position: absolute;
+  margin: 0;
+  top: 24px;
+  left: 16px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 33px;
+  color: #3E3F43;
+}
+.card2_img {
+  -o-object-fit: none;
+     object-fit: none;
+  margin: 0;
+}
+.card2_button {
+  position: absolute;
+  margin: 0;
+  bottom: 24px;
+  right: 16px;
+  width: 123px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #3E3F43;
+  background-color: transparent;
+}
+
+.card2:first-of-type {
+  justify-content: flex-start;
 }/*# sourceMappingURL=index.css.map */
