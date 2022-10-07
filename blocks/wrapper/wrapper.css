@@ -1,0 +1,7 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 0;
+       column-gap: 0;
+  padding-left: 102px;
+}

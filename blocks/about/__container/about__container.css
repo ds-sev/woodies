@@ -1,0 +1,6 @@
+.about__container {
+  margin: 0 100px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

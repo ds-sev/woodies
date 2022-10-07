@@ -1,0 +1,6 @@
+.cards-container {
+  margin: 64px 100px 64px;
+  display: flex;
+  -moz-column-gap: 3px;
+       column-gap: 3px;
+}

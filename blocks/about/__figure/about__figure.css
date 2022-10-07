@@ -1,0 +1,9 @@
+.about__figure {
+  margin: 0;
+  width: 278px;
+  height: 388px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  background-color: #F7DEA6;
+  z-index: -1;
+}
