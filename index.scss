@@ -3,6 +3,7 @@ $pink: #F9BDBD;
 $light-grey: #2222221A;
 $grey: #3E3F43;
 $grey-title: #313235;
+$light-grey: #C4C4C4;
 $dark-grey: rgba(34, 34, 34, 0.75);
 $orange: #DAA520;
 $yellow: #F7DEA6;
@@ -14,7 +15,6 @@ $blue: #A8DCEC;
   position: relative;
   margin: 0 auto;
   max-width: 1152px;
-  border: 1px solid red;
   overflow: hidden;
   font-family: 'Nunito', sans-serif;
 
@@ -65,6 +65,9 @@ ul {
     font-weight: 700;
     letter-spacing: .25em;
     color: $grey;
+  }
+  &_position_footer {
+    margin-bottom: -22px;
   }
 }
 
@@ -258,6 +261,7 @@ ul {
   row-gap: 40px;
   flex-wrap: wrap;
   margin: 0 auto;
+  margin-bottom: 120px;
   width: 952px;
 }
 .card2 {
@@ -310,5 +314,86 @@ ul {
 }
 .card2:first-of-type {
   justify-content: flex-start;
+}
+
+.footer {
+  margin: 0;
+  position: relative;
+  display: flex;
+  height: 455px;
+  &__line {
+    position: absolute;
+    width: 708px;
+    height: 1px;
+    top: 208px;
+    right: 336px;
+    background-color: #C4C4C4;
+  }
+  &__background-1 {
+    margin: 0;
+    top: 0;
+    right: 0;
+    background-image: url(../img/footer_image_start.png);
+    background-repeat: no-repeat;
+    width: 644px;
+  }
+  &__background-2 {
+    display: inline;
+    background-image: url(../img/footer_image.png);
+    background-repeat: no-repeat;
+    width: 508px;
+  }
+
+  &__columns {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 708px;
+    margin: 0;
+    top: 232px;
+    right: 337px;
+
+  }
+  &__link {
+    text-decoration: none;
+    color: #8D8D8D;
+  }
+  &__logo-link {
+    text-decoration: none;
+    color: #3E3F43;
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #333;
+  }
+  &__subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+
+  }
+
+}
+
+
+.footer__column {
+  justify-content: flex-start;
+  margin: 0;
+
+
+}
+.copyright {
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%, 0);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #8D8D8D;
 }
 
