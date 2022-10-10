@@ -302,13 +302,13 @@
   margin: 0;
   top: 0;
   right: 0;
-  background-image: url(/img/footer-image-start.png);
+  background-image: url(img/footer-image-start.png);
   background-repeat: no-repeat;
   width: 644px;
 }
 .footer__background-2 {
   display: inline;
-  background-image: url(/img/footer-image.png);
+  background-image: url(./img/footer-image.png);
   background-repeat: no-repeat;
   width: 508px;
 }
