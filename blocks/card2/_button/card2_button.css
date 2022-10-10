@@ -1,0 +1,14 @@
+.card2_button {
+  position: absolute;
+  margin: 0;
+  bottom: 24px;
+  right: 16px;
+  width: 123px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #3E3F43;
+  background-color: transparent;
+}
+.card2:first-of-type {
+  justify-content: flex-start;
+}

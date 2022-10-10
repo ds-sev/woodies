@@ -1,0 +1,11 @@
+.cards2-container {
+  display: flex;
+  justify-content: flex-start;
+  -moz-column-gap: 56px;
+       column-gap: 56px;
+  row-gap: 40px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  width: 952px;
+}
