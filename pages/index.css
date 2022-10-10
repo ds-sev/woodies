@@ -17,7 +17,7 @@
 
 
 @import url(../blocks/container/container.css);
-@import url(".././blocks/container/container_fig-image.css");
+@import url("../blocks/container/container_fig-image.css");
 
 @import url(../blocks/logo/logo.css);
 @import url(../blocks/logo/__img/logo__img.css);
